@@ -1,0 +1,12 @@
+# Machine-specific configuration (not tracked by git)
+# Copy this file to local.zsh and edit as needed:
+#   cp local.zsh.template local.zsh
+#
+# This file is sourced last — use it for work tools, env vars, overrides, etc.
+
+# Example: IDE integrations
+# [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# Example: work-specific env vars
+# export NEXUS_URL=https://nexus.example.com
+# export DOCKER_REGISTRY=registry.example.com

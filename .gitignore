@@ -1,0 +1,8 @@
+# Machine-specific config
+zsh/.zsh/local.zsh
+
+# Completion cache
+zsh/.zsh/cache/
+
+# History
+.zsh_history
