@@ -29,6 +29,16 @@ chmod +x install.sh
 
 The installer backs up existing configs to `~/.dotfiles-backup/` before creating symlinks.
 
+### Reloading the config
+
+After installation, open a new Zsh terminal or reload the config from an existing Zsh session:
+
+```zsh
+source ~/.zshrc
+```
+
+The installer links `~/.zshrc` and `~/.zsh` to this repository, so keep the clone in place. Edits to the linked config files take effect when you reload the shell config.
+
 ### Dependencies
 
 Install the recommended packages for your system:
@@ -70,3 +80,15 @@ After install, edit `~/.zsh/local.zsh` for anything specific to the current mach
 | `Ctrl+X Ctrl+E` | Edit command in `$EDITOR` |
 | `Ctrl+Z` | Resume background job (empty line) / stash current input (text in line) |
 | `Shift+Tab` | Reverse through completion menu |
+
+## Keeping things up to date
+
+Pull the latest changes, then reload the config from a Zsh session:
+
+```zsh
+cd ~/dotfiles
+git pull --ff-only
+source ~/.zshrc
+```
+
+Keep machine-specific settings in `~/.zsh/local.zsh`; it is loaded after the shared modules and stays outside version control.
