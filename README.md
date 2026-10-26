@@ -20,6 +20,9 @@ Personal shell configuration. No frameworks, no bloat -- just zsh with a modular
 
 ## Setup
 
+Install Zsh first (on Debian/Ubuntu/Mint: `sudo apt install zsh`). The installer
+stops before changing any config files if Zsh is missing.
+
 ```bash
 git clone https://github.com/alpkaragoz/dotfiles.git ~/dotfiles
 cd ~/dotfiles
@@ -45,13 +48,13 @@ Install the recommended packages for your system:
 
 ```bash
 # Debian / Ubuntu / Mint
-sudo apt install zsh-syntax-highlighting zsh-autosuggestions
+sudo apt install zsh zsh-syntax-highlighting zsh-autosuggestions
 
 # Arch
-sudo pacman -S zsh-syntax-highlighting zsh-autosuggestions
+sudo pacman -S zsh zsh-syntax-highlighting zsh-autosuggestions
 
 # macOS
-brew install zsh-syntax-highlighting zsh-autosuggestions
+brew install zsh zsh-syntax-highlighting zsh-autosuggestions
 ```
 
 ### Machine-specific config

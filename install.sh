@@ -11,6 +11,11 @@ nc='\033[0m'
 info() { echo -e "${green}[+]${nc} $1"; }
 warn() { echo -e "${yellow}[!]${nc} $1"; }
 
+if ! command -v zsh >/dev/null 2>&1; then
+  echo "Error: zsh is required. Install it and rerun ./install.sh." >&2
+  exit 1
+fi
+
 backup_and_link() {
   local src="$1" dst="$2"
   if [[ -e "$dst" || -L "$dst" ]]; then
